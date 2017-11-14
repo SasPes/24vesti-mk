@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>24 ВЕСТИ</title>
+
+        <link href='js/libs/24vesti.mk.css' rel='stylesheet' type='text/css' />
+        <link href='js/libs/bootstrap.min.css' rel='stylesheet' type='text/css' />
+
+        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+
+        <script type="text/javascript" src="js/libs/rss2json.js"></script>
+        <script type="text/javascript" src="js/24vesti.mk.js"></script>
+    </head>
+
+    <body bgcolor="#FFF" style="width:400px; height:100%;">
+        <table class="body-wrap">
+            <tr>
+                <td class="container">
+                    <div class="content">
+                        <div id="logo">
+                            <table>
+                                <tr>
+                                    <td style="width:64px;">
+                                        <a href="http://24vesti.mk/" target="_blank"><img src="imgs/icon.png"/></a>
+                                    </td>
+                                    <td valign="middle" align="center">
+                                        <p id="weather" style="color: #00527A; font-size:12px; font-weight: bold;"></p>
+                                    </td>
+                                    <td valign="middle" align="center" style="width:85px;">
+                                        <a href="?page=1" target="_self" style="text-decoration: none">
+                                            <img id="1" src="imgs/1.png" />
+                                        </a>
+                                        <a href="?page=2" target="_self" style="text-decoration: none">
+                                            <img id="2" src="imgs/2.png" />
+                                        </a>
+                                        <a href="?page=3" target="_self" style="text-decoration: none">
+                                            <img id="3" src="imgs/3.png" />
+                                        </a>
+                                        <a href="http://24vesti.mk/video/vesti" target="_blank">
+                                            <img id="1" src="imgs/vesti.png" style="padding:2px 0px 0px 0px;"/>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div id="feed"></div>
+
+                        <div id="pattern" class="pattern">
+                            <form action="http://24vesti.mk/search/node/" method="post" class="f" target="_blank" id="search-form">
+                                <input type="search" id="search" placeholder=" . . . " />
+                                <input id="baraj" type="submit" class="btn search-submit" value="Барај">
+                            </form>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <p style="text-align: center; color: #333f4f; font-size:10px; font-weight: normal;">
+            Oвозможено од <a href="http://24vesti.mk" target="_blank">24 Вести</a>
+            <br/>
+            <a href="https://github.com/SasPes/24vesti-mk">SasPes</a> © 2017
+            <br/><br/>
+        </p>
+    </body>
+</html>
